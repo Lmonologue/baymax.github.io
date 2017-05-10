@@ -3,7 +3,7 @@ title: Baymax Blog
 SEOTitle: 大白的博客 | Baymax Blog
 header-img: img/home-bg.jpg
 email: rolabhj@gmail.com
-url: "http://hj.github.io"              # your host, for absolute URL
+url: "http://baymax.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
