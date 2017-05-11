@@ -117,7 +117,8 @@ for i in range(int(IP4)-1,int(IPend_last)):
 
 ```
 
-###　说明
+### 说明
+
 - 该py必须要在管理员权限下运行，先以管理员权限打开cmd窗口，然后进入该脚本所在目录，最后运行`python demo.py`
 - 该py脚本需要安装wmi库
   安装方法：离线下载->放入py安装目录->解压->进入解压目录->shift+右键打开命令窗口->`python setup.py install`
