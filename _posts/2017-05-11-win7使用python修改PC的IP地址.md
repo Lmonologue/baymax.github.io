@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "win7使用python修改PC的IP地址"
-subtitle:   "修改IP、ping"
-date:       2017-05-11 22:00:00
-author:     "HJ"
-header-img: "img/post-bg-2017.jpg"
-catalog: true
+layout:         post
+title:          "win7使用python修改PC的IP地址"
+subtitle:       "python修改IP、ping"
+date:           2017-05-11 22:00:00
+author:         "HJ"
+header-img:     "img/post-bg-2017.jpg"
+catalog:        true
 tags:
     - python
 ---
