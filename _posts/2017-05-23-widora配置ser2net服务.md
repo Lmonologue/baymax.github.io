@@ -24,12 +24,13 @@ tags:
 
 2. 查看要使用的串口
 
-`$ ls /dev/`  //查看串口的名字，ttyS0，ttyATH0等，确定要使用的串口，这里以串口1为示例	
+`$ ls /dev/`  //查看串口的名字，ttyS0，ttyATH0等，确定要使用的串口，这里以串口1为例	
 `$ echo "hello" > /dev/ttyS1`  //测试串口1是否正常	
 
 3. 配置ser2net
 
 `$ vi /etc/ser2net.conf`  //配置ser2net转发	
+
 ---
 #配置格式说明
 	<TCP port>:<state>:<timeout>:<device>:<options>
@@ -53,3 +54,4 @@ options: 设置串口的参数如：波特率（300，1200，2400，4800，9600�
 2002:raw:600:/dev/ttyS1:115200 NONE 1STOPBIT 8DATABITS XONXOFF LOCAL -RTSCTS
 注：此处最好是屏蔽掉串口1以外的其他设备
 ---
+
