@@ -24,8 +24,7 @@ tags:
 
 2. 查看要使用的串口
 
-`$ ls /dev/`#查看要使用的串口名，如ttyS0等
-`$ echo "hello" > /dev/ttyS1`#测试串口1是否正常		
+`$ ls /dev/`#查看要使用的串口名，如ttyS0等 <br>`$ echo "hello" > /dev/ttyS1`#测试串口1是否正常		
 
 3. 配置ser2net
 
