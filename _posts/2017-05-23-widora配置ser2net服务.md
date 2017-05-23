@@ -19,17 +19,17 @@ tags:
 1. 连接可上网的网络，安装插件
 
 `$ connect2ap root 123456789`   
-`$ opkg update`//升级安装包  
-`$ opkg install ser2net`//安装ser2net 
+`$ opkg update`#升级安装包  
+`$ opkg install ser2net`#安装ser2net 
 
 2. 查看要使用的串口
 
-`$ ls /dev/`  //查看串口的名字如ttyS0等，确定要使用的串口，这里以串口1为例		
-`$ echo "hello" > /dev/ttyS1`  //测试串口1是否正常	
+`$ ls /dev/`#查看串口的名字如ttyS0等，确定要使用的串口，这里以串口1为例		
+`$ echo "hello" > /dev/ttyS1`#测试串口1是否正常	
 
 3. 配置ser2net
 
-`$ vi /etc/ser2net.conf`  //配置ser2net转发	
+`$ vi /etc/ser2net.conf`#配置ser2net转发	
 
 ---
 #配置格式说明
