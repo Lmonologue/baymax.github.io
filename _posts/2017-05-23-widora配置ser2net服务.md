@@ -18,6 +18,6 @@ tags:
 
 1. 连接可上网的网络，更新插件
 
-`$ connect2ap root 123456789`
-`$ opkg update`//升级安装包
-`$ opkg install ser2net`//安装ser2net
+`$ connect2ap root 123456789`   
+`$ opkg update`//升级安装包  
+`$ opkg install ser2net`//安装ser2net 
