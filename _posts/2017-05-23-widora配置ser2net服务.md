@@ -12,7 +12,7 @@ tags:
 
 ### 说明
 
-近期调试一款基于mt7688名为widora的一款路由器开发板，发现openwrt下的一个很好用的TCP-UART互转插件--`ser2net`，经测试，该插件在Nanopi&Ubuntu也可使用
+近期调试一款基于mt7688名为widora的路由器开发板，发现openwrt下的一个很好用的TCP-UART互转插件--`ser2net`，经测试，该插件在Nanopi&Ubuntu也可使用
 
 ### 配置步骤
 
@@ -24,7 +24,7 @@ tags:
 
 2. 查看要使用的串口
 
-`$ ls /dev/`#查看串口的名字如ttyS0等，确定要使用的串口，这里以串口1为例		
+`$ ls /dev/`#查看要使用的串口名，如ttyS0等	
 `$ echo "hello" > /dev/ttyS1`#测试串口1是否正常	
 
 3. 配置ser2net
