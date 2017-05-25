@@ -16,15 +16,15 @@ tags:
 
 ### 配置步骤
 
-1. 连接可上网的网络，安装插件<br>
+- 连接可上网的网络，安装插件<br>
 `$ connect2ap root 123456789`   
 `$ opkg update`#升级安装包  
 `$ opkg install ser2net`#安装ser2net 
 
-2. 查看要使用的串口<br>
+- 查看要使用的串口<br>
 `$ ls /dev/`#查看要使用的串口名，如ttyS0等 <br>`$ echo "hello" > /dev/ttyS1`#测试串口1是否正常		
 
-3. 配置ser2net<br>
+- 配置ser2net<br>
 `$ vi /etc/ser2net.conf`#配置ser2net转发	
 
 ```
