@@ -31,13 +31,14 @@ tags:
 #配置格式说明
 	<TCP port>:<state>:<timeout>:<device>:<options>
 
-TCP port：TCP/IP端口号。(可以加IP,如127.0.0.1,2000或者localhost,2000)
+TCP port：TCP/IP端口号(可以加IP,如127.0.0.1,2000或者localhost,2000)
 state：   四种可选状态
 	  off: 禁止该端口的连接
 	  raw: 端口和串口设备之间双向通信
 	  rawlp: 端口向串口设备单向通信
 	  telnet: 使用telnet协议时用
-timeout：超时，以秒为单位，当没有活动的连接时，可以设置这个时间关闭端口，即没有数据传输时，该端口自动关闭，常写0，关闭该功能，即不会超时
+timeout：超时，以秒为单位，当没有活动的连接时，可以设置这个时间关闭端口，即没有数据传输时，该端口自动关闭
+	 常写0，关闭该功能，即不会超时
 device： 指定映射本机的哪个串口（This must be in the form of /dev/<device>）
 options: 设置串口的参数如：波特率（300，1200，2400，4800，9600，19200，38400，57600，115200）
 	 校验（EVEN，ODD，NONE）
