@@ -46,9 +46,9 @@ options: 设置串口的参数如：波特率（300，1200，2400，4800，9600�
 	 数据位（7DATABITS，8DATABITS）
 	 开启（关闭）XON\XOFF ：XONXOFF（-XONXOFF）
 	 开启（关闭）硬件控制流：RTSCTS（-RTSCTS)
-
-#其中添加或者修改如下：
-2002:raw:600:/dev/ttyS1:115200 NONE 1STOPBIT 8DATABITS XONXOFF LOCAL -RTSCTS
-注：此处最好是屏蔽掉其他设备
 ```
+>#其中添加或者修改如下：
+>`2002:raw:600:/dev/ttyS1:115200 NONE 1STOPBIT 8DATABITS XONXOFF LOCAL -RTSCTS`
+>注：此处最好是屏蔽掉其他设备
+
 
