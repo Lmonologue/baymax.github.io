@@ -17,9 +17,25 @@ tags:
 ### 配置步骤
 
 - 连接可上网的网络，安装插件<br>
-`$ connect2ap root 123456789`   
+`$ widora_mode repeater root 123456789`   
 `$ opkg update`#升级安装包  
 `$ opkg install ser2net`#安装ser2net 
+
+- 配置网络<br>
+`$ vn`<br>
+```
+config interface 'lan'
+        option ifname 'eth0'
+        option force_link '1'
+        option macaddr '0c:ef:af:d0:49:77'
+        option type 'bridge'
+        option ipaddr '192.168.0.34'
+        option netmask '255.255.255.0'
+        option ip6assign '60'
+        option proto 'static'
+```
+>注：添加网络配置，设置静态IP，中继模式只有LAN域，IP必须配置为与上级wifi相同的网段<br>
+>如上级摄像头wifi每次分配的是0段,那么IP必须也是0段，如192.168.0.34<br>
 
 - 查看要使用的串口<br>
 `$ ls /dev/`#查看要使用的串口名，如ttyS0等 <br>`$ echo "hello" > /dev/ttyS1`#测试串口1是否正常		
@@ -56,9 +72,13 @@ options: 设置串口的参数如：波特率（300，1200，2400，4800，9600�
 `$ ser2net -c /etc/ser2net.conf`<br>
 
 - 配置无线模式<br>
-
 `$ vi /etc/Wireless/mt7628_tpl.dat`<br>
 >WirelessMode=4G 1B 9N<br>
+
+- 查看进程<br>
+`ps -w`<br>
+
+
 
 
 
