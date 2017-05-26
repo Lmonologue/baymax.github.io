@@ -78,7 +78,25 @@ options: 设置串口的参数如：波特率（300，1200，2400，4800，9600�
 - 查看进程<br>
 `ps -w`<br>
 
+### 扩展到NanoPI
 
+- 安装插件<br>
+`sudo apt-get install ser2net` 
+
+- 查看配置文件<br>
+`whereis ser2net`<br>
+`ser2net:  /usr/sbin/ser2net    /etc/ser2net.conf    /usr/share/man/man8/ser2net.8.gz`
+
+- ser2net配置<br>
+`vi ser2net.conf 配置`<br>
+`8081:raw:600:/dev/ttyAMA3:115200 8DATABITS NONE 1STOPBIT banner`<br>
+
+- 添加到开机启动项<br>
+`sudo nano /etc/rc.local`<br>
+>在exit0 前添加：`/usr/sbin/ser2net -c /etc/ser2net.conf`
+
+- 查看ser2net是否运行<br>
+`ps -ef | grep ser2net`
 
 
 
