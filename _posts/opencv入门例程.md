@@ -1,10 +1,10 @@
 ---
 layout:         post
-title:          "opencv入门例程"
-subtitle:       "常用基本函数"
+title:		"opencv入门例程"
+subtitle:	"常用基本函数"
 date:           2017-06-16
-author:         "HJ."
-header-img:     "img/post-bg-2017.jpg"
+author:		"HJ."
+header-img:	"img/post-bg-2017.jpg"
 catalog:        true
 tags:
     - opencv
